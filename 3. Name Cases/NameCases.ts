@@ -7,4 +7,4 @@ console.log("lowercase:", personName.toLowerCase());
 //upper case
 console.log("Uppercase: ",personName.toUpperCase());
 //title casse
-console.log("titlecase:",personName.replace(/\bw/g,c => c.toUpperCase()));
+console.log("titlecase:",personName.replace(/\b\w/g,c => c.toUpperCase()));
