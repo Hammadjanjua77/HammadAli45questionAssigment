@@ -48,4 +48,4 @@ console.log(Guest_List);
 
 
 //here I am telling the length of empty array of Q17 (shrinking guest list)
-console.log(`\n\n`the total number of guest are  + ${Guest_List.length}`);
+console.log(\n\n `the total number of guest are  ${Guest_List.length}`);
