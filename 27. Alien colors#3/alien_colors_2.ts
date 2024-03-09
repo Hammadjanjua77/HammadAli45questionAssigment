@@ -4,7 +4,7 @@
 // Part 2
 
 // Using switch statement
-alienColor = "yellow"; // alienColor ka variable V1 file me Declared he.
+let alienColor = "yellow"; 
 
 if (alienColor === "green") {
     console.log("The player earned 5 points.");
