@@ -1,17 +1,14 @@
-//Written by: Hammad Janjua Rajput
-//DATE: 16-2-24
-// part 3 
-//  Using object mapping
-alienColor = "red"; // alienColor ka variable V1 file me Declared he.
-var pointMap = {
-    "green": 5,
-    "yellow": 10,
-    "red": 15
-};
-var points = pointMap[alienColor];
-if (points !== undefined) {
-    console.log("The player earned ".concat(points, " points."));
+"use strict";
+let alienColor = "red";
+if (alienColor === "green") {
+    console.log("The player earned 5 points.");
+}
+else if (alienColor === "yellow") {
+    console.log("The player earned 10 points.");
+}
+else if (alienColor === "red") {
+    console.log("The player earned 15 points.");
 }
 else {
-    console.log("Unknown alien color."); // If not Filled than it was working
+    console.log("Unknown alien color."); // If not filled.
 }
