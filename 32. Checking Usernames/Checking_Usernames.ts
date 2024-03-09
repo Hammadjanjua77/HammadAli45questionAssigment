@@ -2,23 +2,22 @@
 // date : 19-feb-2024
 
 // current_users array
-const current_users: string[] = ['Hammad Janjua Rajput', 'Hina Naseer', 'Imran Khan', 'Naveed Ahmed', 'Shahbaz Saleem'];
+let current_users: string[] = ['Hammad Janjua Rajput', 'Hina Naseer', 'Imran Khan', 'Naveed Ahmed', 'Shahbaz Saleem'];
 
 // new_users array
-const new_users: string[] = ['Sami king', 'Hammad Janjua Rajput', 'Samad Zaib', 'Salman', 'Hina Naseer'];
+let new_users: string[] = ['Bilal','Hina Naseer','Imran Khan','Jameel','Hamza'];
 
-// Loop through new_users list
-for (let new_user of new_users) {
-  // Convert new_user to lowercase for case insensitivity
-  const lowercase_new_user = new_user.toLowerCase();
+new_users.forEach(newUsername => {
+  let LowerCase: string = newUsername.toLowerCase();
+
   
   // Checking username already exists in current_users or not
-  if (current_users.map(user => user.toLowerCase()).includes(lowercase_new_user)) {
+  if (current_users.map(user => user.toLowerCase()).includes(LowerCase)) {
       // Username already exists
-      console.log(`The username '${new_user}' is not available. Please choose a different username.`);
+    console.log(`The username '${newUsername}' is not available. Please choose a different username.`);
   } else {
       // Username is available
-      console.log(`The username '${new_user}' is available.`);
+      console.log(`The username '${newUsername}' is available.`);
   }
-}
+})
 
